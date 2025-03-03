@@ -1,0 +1,78 @@
+body {
+    background-image: url('/log.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.rslogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+.panel-title {
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+.title {
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-box {
+    width: 500%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-container {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+.checkbox-container input {
+    width: 18px;
+    height: 18px;
+}
+
+.submit-btn {
+    width: 150%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
