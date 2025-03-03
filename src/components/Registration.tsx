@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import "../css/registration.css";
 
 export default function Registration(){
+    useLayoutEffect(() => {
+        document.body.style.backgroundColor = 'lightblue';
+        return () => {
+          document.body.style.backgroundColor = '';
+        };
+    }, []); 
         const [name, setName] = useState("");
         const [email, setEmail] = useState("");
         const [experience, setExperience] = useState<number | "">("");

@@ -11,12 +11,11 @@
     top: 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     font-family: Arial, sans-serif;
-    transform: translateX(-100px)
-    transition = transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
-.sidebar.open{
-    transform: translateX(0);
-}
+.sidebar.open {
+    left: 0;
+  }
 
 .profile-section {
     margin-top: 10px;
@@ -47,7 +46,8 @@
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 15px;
+      
 }
 
 .login-btn {
@@ -58,7 +58,6 @@
     border-radius: 20px;
     cursor: pointer;
 }
-
 .register-btn {
     background-color: crimson;
     color: white;
@@ -148,3 +147,4 @@
     scrollbar-width: none; 
     -ms-overflow-style: none; 
   }
+  

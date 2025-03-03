@@ -1,5 +1,12 @@
+import { useLayoutEffect } from "react";
 import "../css/JobSearch.css";
 export default function JobSearch(){
+  useLayoutEffect(() => {
+          document.body.style.backgroundColor = 'bisque';
+          return () => {
+            document.body.style.backgroundColor = '';
+          };
+      }, []); 
   return (
     <div className="job-search-container">
       <div className="search-section">
@@ -30,7 +37,7 @@ export default function JobSearch(){
           <span className="icon">📄</span>
           <span>Apply</span>
         </a>
-        <a href="#" className="nav-item">
+        <a href="/" className="nav-item">
           <span className="icon">👤</span>
           <span>Profile</span>
         </a>

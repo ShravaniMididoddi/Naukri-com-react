@@ -13,8 +13,10 @@ export default function App() {
       <Route element ={<WelcomePage/>} path="/"/>
       <Route element={<ResumeLogin/>} path="/login" />
       <Route element={<Registration/>}path="/register"/>
-      <Route element={<SideBar/>}path="/sideBar"/>
-      <Route element={<SideBarIcon/>}path="/icon"/>
+      <Route element={<SideBar isOpen={false}/>}path="/sidebar"/>
+      <Route element={<SideBarIcon onClick={function (): void {
+            throw new Error("Function not implemented.")
+          } }/>}path="/icon"/>
       <Route element={<JobSearch/>}path="/jobsearch"/>
       </Routes>
       </BrowserRouter>

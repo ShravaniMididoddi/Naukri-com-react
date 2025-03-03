@@ -1,14 +1,40 @@
-.icon{
-    width: 50%;
+
+.icon {
+    position: fixed;
+    top: 20px; 
+    left: 20px;  
+    z-index: 1001; 
+  }
+  
+  .bar-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bar-link {
+    display: block;
+  }
+  
+  .sidebar-icon {
+    width: 40px;  
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-icon:hover {
+    transform: scale(1.1);  
+  }
+  
+  .bar-link:focus, .bar-link:active {
+    outline: none;
+  }
+  
 .icon img{
     max-width: 100%;
     height: auto;
     max-height: 150px;
     object-fit: contain;
 }
+  
